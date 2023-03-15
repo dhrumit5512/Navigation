@@ -6,13 +6,6 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import DetailsScreen from './DetailsScreen';
 import FrogsScreen from './FrogsScreen';
 
-function DetailsScreen() {
-  return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Details!</Text>
-    </View>
-  );
-}
 
 function HomeScreen({ navigation }) {
   return (
