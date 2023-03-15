@@ -6,7 +6,6 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import DetailsScreen from './DetailsScreen';
 import FrogsScreen from './FrogsScreen';
 
-
 function HomeScreen({ navigation }) {
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
@@ -38,6 +37,7 @@ function HomeStackScreen() {
     <HomeStack.Navigator>
       <HomeStack.Screen name="Home" component={HomeScreen} />
       <HomeStack.Screen name="Details" component={DetailsScreen} />
+      <HomeStack.Screen name="Frogs" component={FrogsScreen} />
     </HomeStack.Navigator>
   );
 }
@@ -49,6 +49,7 @@ function SettingsStackScreen() {
     <SettingsStack.Navigator>
       <SettingsStack.Screen name="Settings" component={SettingsScreen} />
       <SettingsStack.Screen name="Details" component={DetailsScreen} />
+      <HomeStack.Screen name="Frogs" component={FrogsScreen} />
     </SettingsStack.Navigator>
   );
 }
